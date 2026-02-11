@@ -61,7 +61,7 @@ textarea {
 </div>
 
 <div class="info" id="limitInfo">
-  Upto 6 letters <span class="info small">as per password length and other requirement</span>
+  Upto 6 letters <span class="info small">as per password length and other requirements</span>
 </div>
 
 <textarea id="userInput" rows="2" placeholder="Type letters of your choice to include in password (optional)"></textarea>
@@ -199,7 +199,7 @@ function updateUI(){
     limitInfo.innerHTML = 'Not allowed <span class="info small">as per password length and other requirement</span>';
     limitInfo.classList.add("notallowed");
   } else {
-    limitInfo.innerHTML = `Only ${maxUser} letters <span class="info small">as per password length and other requirement</span>`;
+    limitInfo.innerHTML = `Upto ${maxUser} letters <span class="info small">as per password length and other requirement</span>`;
     limitInfo.classList.remove("notallowed");
   }
 
